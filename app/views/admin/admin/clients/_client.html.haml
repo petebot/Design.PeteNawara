@@ -1,0 +1,6 @@
+%li<
+  %span.name= client.name
+  %span.small<
+    = link_to "Edit", edit_admin_client_path(client)
+    &bullet;&nbsp;
+    = link_to "Delete", admin_client_path(client), :method => :delete

@@ -1,0 +1,32 @@
+body {
+  font-family:Arial;
+
+  label {
+    display:block;
+  }
+
+  input {
+    margin:5px 0 10px 0;
+  }
+
+  button {
+    display:block;
+    margin:10px 0;
+    border:1px solid #ff0;
+    background-color: #fc3;
+  }
+  
+  p {
+    font-size:1.2em;
+  }
+  
+  .field_with_errors {
+    input {
+      border:2px solid red;
+    }
+  }
+
+  .small {
+    font-size:0.8em
+  }
+}
