@@ -6,54 +6,54 @@
   font-weight: normal;
   font-style: normal; }
 
-body.administrator {
+body {
   font-family: Arial;
   color: #666;
   color: #666666;
   background-color: #fafafa; }
-  body.administrator #container {
+  body #container {
     display: block;
     margin: 0 auto;
-    width: 500px;
+    width: 960px;
     padding: 40px;
     background-color: #eee;
     position: relative;
     top: 60px;
     border: 1px solid #ddd; }
-  body.administrator h1, body.administrator h2, body.administrator h3, body.administrator h4, body.administrator h5 {
+  body h1, body h2, body h3, body h4, body h5 {
     font-family: 'BallparkWeiner', Arial, sans-serif;
     font-weight: normal;
     text-transform: capitalize; }
-  body.administrator h1 {
+  body h1 {
     margin: -20px 0 -10px;
     font-size: 4em;
     color: #29ABE2;
     color: #29abe2; }
-  body.administrator h2 {
+  body h2 {
     margin: 20px 0 10px;
     font-size: 2.4em;
     font-weight: normal;
     color: #93278F;
     color: #93278f; }
-  body.administrator h3 {
+  body h3 {
     margin: 0;
     font-size: 2.4em;
     font-weight: normal;
     text-transform: none; }
-  body.administrator header h3 {
+  body header h3 {
     display: none; }
-  body.administrator footer p {
-    width: 500px;
+  body footer p {
+    width: 960px;
     border-top: 1px dashed #ddd;
     font-size: .7em;
     color: #aaa;
     margin: 10px 0 -40px -40px;
     padding: 10px 40px;
     text-align: right; }
-  body.administrator label {
+  body label {
     display: block;
     font-size: 1.2em; }
-  body.administrator input {
+  body input {
     margin: 5px 0 10px 0;
     padding: 10px 5px;
     font-size: 1.4em;
@@ -61,7 +61,7 @@ body.administrator {
     border: 1px solid #aaa;
     display: block;
     width: 490px; }
-  body.administrator textarea {
+  body textarea {
     margin: 5px 0 10px 0;
     padding: 10px;
     font-size: 1.4em;
@@ -70,7 +70,7 @@ body.administrator {
     display: block;
     height: 100px;
     width: 480px; }
-  body.administrator button {
+  body button {
     display: inline-block;
     margin: 10px 0;
     border: 1px solid #aaa;
@@ -79,30 +79,51 @@ body.administrator {
     font-size: 1.2em;
     color: #29ABE2;
     color: rgba(41, 171, 226, 0.8); }
-  body.administrator button:hover {
+  body button:hover {
     background-color: #fafafa; }
-  body.administrator p {
+  body p {
     font-size: 1.2em; }
-  body.administrator .field_with_errors input {
+  body .field_with_errors input {
     border: 2px solid red; }
-  body.administrator a, body.administrator a:visited {
+  body a, body a:visited {
     color: #ED1E79;
     color: rgba(237, 30, 121, 0.8);
     text-decoration: none; }
-  body.administrator ul {
+  body ul {
     margin: 0;
     padding: 0;
     display: block; }
-    body.administrator ul li {
+    body ul li {
       list-style-type: none;
       list-style-position: outside;
       display: block; }
-  body.administrator ul#navigation {
+  body ul#navigation {
     position: relative;
-    top: -140px;
+    top: -100px;
     right: -35px;
     float: right; }
-    body.administrator ul#navigation li {
+    body ul#navigation li {
       display: inline; }
-  body.administrator .small {
+  body .small {
     font-size: 0.8em; }
+
+body.administrator #container {
+  width: 500px; }
+body.administrator h1 {
+  margin: -20px 0 -10px; }
+body.administrator h2 {
+  margin: 20px 0 10px; }
+body.administrator h3 {
+  margin: 0; }
+body.administrator header h3 {
+  display: none; }
+body.administrator footer p {
+  width: 500px;
+  font-size: .7em; }
+body.administrator ul#navigation {
+  position: relative;
+  top: -100px;
+  right: -35px;
+  float: right; }
+  body.administrator ul#navigation li {
+    display: inline; }

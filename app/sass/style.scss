@@ -5,7 +5,7 @@
 	font-weight: normal;
 	font-style: normal;
 }
-body.administrator {
+body {
   font-family:Arial;
   color: #666;
   color: rgba(102,102,102,1);
@@ -13,7 +13,7 @@ body.administrator {
   #container {
     display: block;
     margin: 0 auto;
-    width: 500px;
+    width: 960px;
     padding: 40px;
     background-color: #eee;
     position: relative;
@@ -51,7 +51,7 @@ body.administrator {
   }
   footer {
     p {
-      width: 500px;
+      width: 960px;
       border-top: 1px dashed #ddd;
       font-size: .7em;
       color: #aaa;
@@ -126,7 +126,7 @@ body.administrator {
   }
   ul#navigation {
     position: relative;
-    top: -140px;
+    top: -100px;
     right: -35px;
     float: right;
     li {
@@ -136,4 +136,47 @@ body.administrator {
   .small {
     font-size:0.8em
   }
+}
+
+
+
+// Admin Styles
+body.administrator {
+
+  #container {
+    width: 500px;
+  } 
+  h1, h2, h3, h4, h5 {
+  }
+  h1 {
+  margin: -20px 0 -10px;
+}
+  h2 {
+    margin: 20px 0 10px;
+  }
+  h3 {
+    margin: 0;
+  }
+  header {
+    h3 {
+      display: none;
+    }
+  }
+  footer {
+    p {
+      width: 500px;
+      font-size: .7em;
+    }
+  }
+
+  ul#navigation {
+    position: relative;
+    top: -100px;
+    right: -35px;
+    float: right;
+    li {
+      display: inline;
+    }
+   }
+
 }
