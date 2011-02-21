@@ -2,9 +2,10 @@
 %html
   %head= render "common/head"
   %body{:class => body_class}
-    #header= render "common/header"
-    %ul#navigation= render :partial => "common/navigation", :collection => navigation_nodes
-    %h1#title= yield(:title) || "Pete Nawara"
-    #flashes= render "common/flash"
-    #content= yield
-    #footer= render "common/footer"
+    #container
+      %header= render "common/header"
+      %section
+        %h2#title= yield(:title) || "Pete Nawara"
+        #flashes= render "common/flash"
+        #content= yield
+      %footer= render "common/footer"
