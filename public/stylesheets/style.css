@@ -40,8 +40,6 @@ body {
     font-size: 2.4em;
     font-weight: normal;
     text-transform: none; }
-  body header h3 {
-    display: none; }
   body footer p {
     width: 960px;
     border-top: 1px dashed #ddd;
@@ -78,17 +76,43 @@ body {
     padding: 10px 40px;
     font-size: 1.2em;
     color: #29ABE2;
-    color: rgba(41, 171, 226, 0.8); }
+    color: rgba(41, 171, 226, 0.8);
+    transition: all .3s linear;
+    -o-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -webkit-transition: all .3s linear; }
   body button:hover {
-    background-color: #fafafa; }
+    background-color: #fafafa;
+    transition: all .3s linear;
+    -o-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -webkit-transition: all .3s linear; }
   body p {
     font-size: 1.2em; }
   body .field_with_errors input {
     border: 2px solid red; }
   body a, body a:visited {
     color: #ED1E79;
-    color: rgba(237, 30, 121, 0.8);
-    text-decoration: none; }
+    color: rgba(237, 30, 121, 0.5);
+    text-decoration: none;
+    transition: all .3s linear;
+    -o-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -webkit-transition: all .3s linear; }
+  body a:hover {
+    color: #ED1E79;
+    color: #ed1e79;
+    transition: all .3s linear;
+    -o-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -webkit-transition: all .3s linear; }
+  body a:active {
+    color: #ffffff;
+    color: rgba(237, 30, 121, 0.2);
+    transition: all .3s linear;
+    -o-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -webkit-transition: all .3s linear; }
   body ul {
     margin: 0;
     padding: 0;
@@ -99,7 +123,7 @@ body {
       display: block; }
   body ul#navigation {
     position: relative;
-    top: -100px;
+    top: -140px;
     right: -35px;
     float: right; }
     body ul#navigation li {

@@ -1,3 +1,5 @@
+
+
 @font-face {
 	font-family: 'BallparkWeiner';
 	src: url('../fonts/ballpark_weiner-webfont.eot');
@@ -5,6 +7,13 @@
 	font-weight: normal;
 	font-style: normal;
 }
+@mixin transition {
+	 transition: all .3s linear;
+   -o-transition: all .3s linear;
+   -moz-transition: all .3s linear;
+   -webkit-transition: all .3s linear;
+}
+
 body {
   font-family:Arial;
   color: #666;
@@ -43,11 +52,6 @@ body {
     font-size: 2.4em;
     font-weight: normal;
     text-transform: none;
-  }
-  header {
-    h3 {
-      display: none;
-    }
   }
   footer {
     p {
@@ -95,9 +99,12 @@ body {
     font-size: 1.2em;
     color: #29ABE2;
     color: rgba(41, 171, 226, .8);
+    @include transition;
+    
   }
   button:hover {
     background-color: #fafafa;
+    @include transition;
   }
   
   p {
@@ -111,9 +118,21 @@ body {
   }
   a, a:visited {
     color: #ED1E79;
-    color: rgba(237, 30, 121, .8);
+    color: rgba(237, 30, 121, .5);
     text-decoration: none;
+    @include transition;
   }
+  a:hover {
+    color: #ED1E79;
+    color: rgba(237, 30, 121, 1);
+    @include transition;
+  }
+  a:active {
+    color: #ffffff;
+    color: rgba(237, 30, 121, .2);
+    @include transition;
+  }
+  
   ul {
     margin: 0;
     padding: 0;
@@ -126,7 +145,7 @@ body {
   }
   ul#navigation {
     position: relative;
-    top: -100px;
+    top: -140px;
     right: -35px;
     float: right;
     li {
