@@ -18,6 +18,12 @@
   background: url(../images/bgtexture.png), -moz-radial-gradient(#f6f6f6,  #dedede);
 }
 
+@mixin shadow {
+    -moz-box-shadow: 0px 0px 10px #ddd; /* Firefox */
+    -webkit-box-shadow: 0px 0px 10px #ddd; /* Safari, Chrome */
+    box-shadow: 0px 0px 10px #ddd; /* CSS3 */
+}
+
 body {
   font-family:Arial;
   color: #666;
@@ -31,8 +37,9 @@ body {
     background-color: #eee;
     position: relative;
     top: 60px;
-    border: 1px solid #ddd;
+    border: 1px solid #fff;
     @include bg;
+    @include shadow;
     
   } 
   h1, h2, h3, h4, h5 {
@@ -53,6 +60,8 @@ body {
     text-shadow: 0px 0px 5px rgba(255, 255, 255, .1);
   }
   h1.header a:hover {
+    color: #54BCE8;
+    color: rgba(84, 188, 232, 1);
     text-shadow: 0px 0px 5px rgba(41, 171, 226, .3);
   }
   h2 {
