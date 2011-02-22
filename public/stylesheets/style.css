@@ -29,6 +29,9 @@ body {
     font-size: 4em;
     color: #29ABE2;
     color: #29abe2; }
+  body h1.header a {
+    color: #29ABE2;
+    color: #29abe2; }
   body h2 {
     margin: 20px 0 10px;
     font-size: 2.4em;
@@ -48,6 +51,8 @@ body {
     margin: 10px 0 -40px -40px;
     padding: 10px 40px;
     text-align: right; }
+  body footer p.administration {
+    display: none; }
   body label {
     display: block;
     font-size: 1.2em; }
@@ -141,9 +146,12 @@ body.administrator h3 {
   margin: 0; }
 body.administrator header h3 {
   display: none; }
-body.administrator footer p {
+body.administrator footer p.public {
+  display: none; }
+body.administrator footer p.administration {
   width: 500px;
-  font-size: .7em; }
+  font-size: .7em;
+  display: block; }
 body.administrator ul#navigation {
   position: relative;
   top: -100px;
