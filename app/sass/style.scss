@@ -13,6 +13,10 @@
    -moz-transition: all .3s linear;
    -webkit-transition: all .3s linear;
 }
+@mixin bg{
+  background: url(../images/bgtexture.png), -webkit-gradient(radial, 500 170, 300, 500 100, 200, from(#eaeaea), to(#f6f6f6));
+  background: url(../images/bgtexture.png), -moz-radial-gradient(#f6f6f6,  #dedede);
+}
 
 body {
   font-family:Arial;
@@ -28,6 +32,8 @@ body {
     position: relative;
     top: 60px;
     border: 1px solid #ddd;
+    @include bg;
+    
   } 
   h1, h2, h3, h4, h5 {
     font-family: 'BallparkWeiner', Arial, sans-serif;
@@ -39,10 +45,15 @@ body {
   font-size: 4em;
   color: #29ABE2;
   color: rgba(41, 171, 226, 1);
+  
 }
   h1.header a {
     color: #29ABE2;
     color: rgba(41, 171, 226, 1);
+    text-shadow: 0px 0px 5px rgba(255, 255, 255, .1);
+  }
+  h1.header a:hover {
+    text-shadow: 0px 0px 5px rgba(41, 171, 226, .3);
   }
   h2 {
     margin: 20px 0 10px;
