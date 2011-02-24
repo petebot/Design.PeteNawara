@@ -7,16 +7,20 @@
 	font-weight: normal;
 	font-style: normal;
 }
+
 @mixin transition {
-	 transition: all .3s linear;
-   -o-transition: all .3s linear;
-   -moz-transition: all .3s linear;
-   -webkit-transition: all .3s linear;
+	 transition: all .5s linear;
+   -o-transition: all .5s linear;
+   -moz-transition: all .5s linear;
+   -webkit-transition: all .5s linear;
 }
 @mixin bg{
   background: url(../images/bgtexture.png), -webkit-gradient(radial, 500 170, 300, 500 100, 200, from(#eaeaea), to(#f6f6f6));
   background: url(../images/bgtexture.png), -moz-radial-gradient(#f6f6f6,  #dedede);
 }
+
+
+
 
 @mixin btnbg{
   background: url(../images/bgtexture.png), -webkit-gradient(linear,
@@ -48,6 +52,9 @@
     -webkit-box-shadow: 0px 0px 4px #29ABE2; /* Safari, Chrome */
     box-shadow: 0px 0px 4px #29ABE2; /* CSS3 */
 }
+input, textarea, select {
+   -webkit-appearance: none;
+ }
 a:focus, a:active, button:focus, button:active {
   outline: 0 none;
 }
@@ -80,6 +87,34 @@ body {
     @include shadow;
     
   } 
+  #container:after{
+  	-webkit-box-shadow: 8px 12px 10px rgba(0, 0, 0, 0.2);
+      position:absolute;
+      z-index: -2;
+  	content:'';
+  	background:transparent;
+  	bottom:15px;
+  	right:15px;
+  	width:40%;
+  	height:40%;
+      -webkit-transform: rotate(5deg)
+  					   skew(10deg);
+  }
+  #container:before{
+  	-webkit-box-shadow: 11px 11px 32px rgba(255, 255, 255, 0.7);
+      position:absolute;
+      z-index: -1;
+  	content:'';
+  	background:transparent;
+  	bottom:90px;
+  	right:95px;
+  	width:50%;
+  	height:50%;
+      -webkit-transform: rotate(18deg)
+  					   skew(45deg);
+
+  }
+  
   h1, h2, h3, h4, h5 {
     font-family: 'BallparkWeiner', Arial, sans-serif;
     font-weight: normal;
