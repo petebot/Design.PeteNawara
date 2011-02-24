@@ -8,6 +8,7 @@ gem "haml-rails"
 gem "rmagick"
 gem "carrierwave"
 gem "maruku"
+gem "jquery-rails"
 
 group :production do
   # gem "mysql"
