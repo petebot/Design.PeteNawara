@@ -42,28 +42,6 @@ body {
     /* Safari, Chrome */
     box-shadow: 0px 0px 10px #ddd;
     /* CSS3 */ }
-  body #container:after {
-    -webkit-box-shadow: 8px 12px 10px rgba(0, 0, 0, 0.2);
-    position: absolute;
-    z-index: -2;
-    content: '';
-    background: transparent;
-    bottom: 15px;
-    right: 15px;
-    width: 40%;
-    height: 40%;
-    -webkit-transform: rotate(5deg) skew(10deg); }
-  body #container:before {
-    -webkit-box-shadow: 11px 11px 32px rgba(255, 255, 255, 0.7);
-    position: absolute;
-    z-index: -1;
-    content: '';
-    background: transparent;
-    bottom: 90px;
-    right: 95px;
-    width: 50%;
-    height: 50%;
-    -webkit-transform: rotate(18deg) skew(45deg); }
   body h1, body h2, body h3, body h4, body h5 {
     font-family: 'BallparkWeiner', Arial, sans-serif;
     font-weight: normal;
