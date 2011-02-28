@@ -1,4 +1,8 @@
 class Project < ActiveRecord::Base
+  belongs_to :client
+  has_many :projects_tools
+  has_many :tools, :through => :projects_tools
+
   validates_presence_of   :title
   validates_presence_of :priority
 

@@ -129,7 +129,7 @@ body {
     display: inline-block;
     margin: 10px 0;
     border: 1px solid #aaa;
-    background-color: #f0f0f0;
+    background-color: #fafafa;
     padding: 10px 40px;
     font-size: 1.2em;
     color: #29ABE2;
@@ -141,7 +141,7 @@ body {
     background-image: url(/images/button.png);
     background-position: 0px 0; }
   body button:hover {
-    background-color: #fafafa;
+    background-color: #ffffff;
     transition: all .5s linear;
     -o-transition: all .5s linear;
     -moz-transition: all .5s linear;
@@ -152,12 +152,10 @@ body {
     /* Safari, Chrome */
     box-shadow: 0px 0px 4px #29ABE2;
     /* CSS3 */
-    background: url(../images/bgtexture.png), -webkit-gradient(linear, left bottom, left top, color-stop(0.35, #f6f6f6), color-stop(1, #dedede));
-    background: url(../images/bgtexture.png), -moz-linear-gradient(#dedede, #f6f6f6);
     background-image: url(/images/button.png);
     background-position: 0px -140px; }
   body button:focus {
-    background-color: #fafafa;
+    background-color: #ffffff;
     background-image: url(/images/button.png);
     background-position: 0px -140px;
     transition: all .5s linear;
@@ -174,6 +172,37 @@ body {
     font-size: 1.2em; }
   body .field_with_errors input {
     border: 2px solid red; }
+  body label.check_box {
+    display: inline;
+    line-height: 20px;
+    padding: 0;
+    margin: 0; }
+  body input[type="checkbox"] {
+    transition: all .5s linear;
+    -o-transition: all .5s linear;
+    -moz-transition: all .5s linear;
+    -webkit-transition: all .5s linear;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    background-color: #ccc;
+    background-image: url(/images/button.png); }
+  body input[type="checkbox"]:checked {
+    background-color: #ffffff;
+    transition: all .5s linear;
+    -o-transition: all .5s linear;
+    -moz-transition: all .5s linear;
+    -webkit-transition: all .5s linear;
+    background-image: url(/images/button.png);
+    background-position: 0px -140px;
+    -moz-box-shadow: 0px 0px 4px #29ABE2;
+    /* Firefox */
+    -webkit-box-shadow: 0px 0px 4px #29ABE2;
+    /* Safari, Chrome */
+    box-shadow: 0px 0px 4px #29ABE2;
+    /* CSS3 */ }
   body a, body a:visited {
     color: #ED1E79;
     color: rgba(237, 30, 121, 0.5);

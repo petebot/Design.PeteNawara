@@ -1,5 +1,5 @@
 %h1.header
   = link_to "It's Pete Nawara", "/"
 %h3 He's on the internet!
-%ul#navigation= render :partial => "common/navigation", :collection => navigation_nodes
-
+- if admin?
+  %ul#navigation= render :partial => "common/navigation", :collection => navigation_nodes

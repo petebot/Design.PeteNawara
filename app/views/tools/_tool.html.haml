@@ -1,6 +1,7 @@
 %li<
   %span.name= tool.name
-  %span.small<
-    = link_to "Edit", edit_tool_path(tool)
-    &nbsp;
-    = link_to "Delete", tool_path(tool), :method => :delete
+  - if admin?
+    %span.small<
+      = link_to "Edit", edit_tool_path(tool)
+      &nbsp;
+      = link_to "Delete", tool_path(tool), :method => :delete

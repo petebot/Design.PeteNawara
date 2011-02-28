@@ -19,4 +19,14 @@ module ApplicationHelper
       "project"
     end
   end
+  
+  def date_select_options
+    end_year = Time.now.localtime.year
+    start_year = end_year - 15
+    return {:discard_day => true, :discard_month => true, :start_year => start_year, :end_year => end_year, :include_blank => "Please select"}
+  end
+
+  def admin?
+    true
+  end
 end

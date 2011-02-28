@@ -7,7 +7,7 @@ gem "haml"
 gem "haml-rails"
 gem "rmagick"
 gem "carrierwave"
-gem "maruku"
+gem "RedCloth"
 gem "jquery-rails"
 
 group :production do

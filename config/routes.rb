@@ -1,5 +1,6 @@
 DesignPetenawaraCom::Application.routes.draw do
   resources :clients
+  resources :projects
   resources :tools
 
   # The priority is based upon order of creation:

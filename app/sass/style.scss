@@ -185,7 +185,7 @@ body {
     display: inline-block;
     margin:10px 0;
     border:1px solid #aaa;
-    background-color: #f0f0f0;
+    background-color: #fafafa;
     padding: 10px 40px;
     font-size: 1.2em;
     color: #29ABE2;
@@ -197,15 +197,15 @@ body {
     
   }
   button:hover {
-    background-color: #fafafa;
+    background-color: #ffffff;
     @include transition;
     @include glow;
-    @include btnbg2;
+    //@include btnbg2;
     background-image: url(/images/button.png);
     background-position: -0px -140px;
   }
   button:focus {
-    background-color: #fafafa;
+    background-color: #ffffff;
     background-image: url(/images/button.png);
     background-position: -0px -140px;
     @include transition;
@@ -220,6 +220,29 @@ body {
     input {
       border:2px solid red;
     }
+  }
+  label.check_box {
+    display: inline;
+    line-height: 20px;
+    padding: 0;
+    margin: 0;
+  }
+  input[type="checkbox"] {
+    @include transition;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    background-color: #ccc;
+    background-image: url(/images/button.png);
+  }
+  input[type="checkbox"]:checked {
+    background-color: #ffffff;
+    @include transition;
+    background-image: url(/images/button.png);
+    background-position: -0px -140px;
+    @include glow;
   }
   a, a:visited {
     color: #ED1E79;

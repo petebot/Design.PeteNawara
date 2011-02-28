@@ -1,0 +1,5 @@
+- if client
+  - if client.url.present?
+    = link_to client.name, client.url
+  - else
+    = client.name

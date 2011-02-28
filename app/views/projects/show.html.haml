@@ -1,0 +1,7 @@
+- title @project.title
+%h4.client= render "projects/client", :client => @project.client
+.date= render "projects/date", :project => @project
+= raw RedCloth.new(@project.description).to_html
+%ul= render @project.tools
+- if admin?
+  %p.admin_link= link_to "Edit this project", edit_project_path(@project)

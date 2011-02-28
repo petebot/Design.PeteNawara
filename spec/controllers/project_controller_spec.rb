@@ -19,7 +19,7 @@ describe ProjectsController do
   describe "#create" do
     it "should be successful" do
       lambda do
-        post "create", :project => {:name => "Dane Cook"}
+        post "create", :project => {:title => "Dane Cook"}
       end.should change(Project, :count).by(1)
 
       assigns(:project).should_not be_nil
@@ -31,7 +31,7 @@ describe ProjectsController do
 
   context "changing project records" do
     before do
-      @project = Project.create :name => "Bob Saggot"
+      @project = Project.create :title => "Bob Saggot"
       @project.should be_valid
       @project.should_not be_new_record
       @project.id.should_not be_nil
@@ -45,20 +45,20 @@ describe ProjectsController do
     end
 
     describe "#update" do
-      new_name = "Sob Baggot"
+      new_title = "Sob Baggot"
 
       it "should be successful" do
-        put "update", :id => @project.id, :project => {:name => new_name}
-        response.should redirect_to(projects_path)
+        put "update", :id => @project.id, :project => {:title => new_title}
+        response.should redirect_to(project_path(@project.reload))
 
-        @project.reload.name.should == new_name
+        @project.reload.title.should == new_title
       end
     end
   end
 
   describe "#destroy" do
     it "should be successful" do
-      project = Project.create :name => "Adobe"
+      project = Project.create :title => "Adobe"
       delete "destroy", :id => project.id
       response.should redirect_to(projects_path)
     end
