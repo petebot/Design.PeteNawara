@@ -1,0 +1,18 @@
+= render "common/form_errors", :target => @tool
+- form_for @tool do |form|
+  = form.label :client
+  = form.select :client_id, Client.all.map { |client| [client.name, client.id] }, { :include_blank => "Please select&hellip;" }
+  = form.label :description
+  = form.text_area :description
+  = form.label :name
+  = form.text_field :name
+  = form.label :description
+  = form.text_area :description
+  = form.label :start_date
+  = form.date_select :start_date, :discard_day => true, :discard_month => true
+  = form.label :end_date
+  = form.date_select :end_date, :discard_day => true, :discard_month => true
+  = form.label :url
+  = form.text_field :url
+  %button{:type => "submit"}= params[:action].capitalize
+  = link_to "Cancel", tools_path

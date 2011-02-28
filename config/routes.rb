@@ -1,8 +1,6 @@
 DesignPetenawaraCom::Application.routes.draw do
-  namespace :admin do
-    resources :clients
-    resources :tools
-  end
+  resources :clients
+  resources :tools
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -46,7 +44,7 @@ DesignPetenawaraCom::Application.routes.draw do
 
   # Sample resource route within a namespace:
   #   namespace :admin do
-  #     # Directs /admin/products/* to Admin::ProductsController
+  #     # Directs /admin/products/* to ProductsController
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end

@@ -138,8 +138,8 @@ body {
     -o-transition: all .5s linear;
     -moz-transition: all .5s linear;
     -webkit-transition: all .5s linear;
-    background: url(../images/bgtexture.png), -webkit-gradient(linear, left bottom, left top, color-stop(0.35, #dedede), color-stop(1, #f6f6f6));
-    background: url(../images/bgtexture.png), -moz-linear-gradient(#f6f6f6, #dedede); }
+    background-image: url(/images/button.png);
+    background-position: 0px 0; }
   body button:hover {
     background-color: #fafafa;
     transition: all .5s linear;
@@ -153,9 +153,13 @@ body {
     box-shadow: 0px 0px 4px #29ABE2;
     /* CSS3 */
     background: url(../images/bgtexture.png), -webkit-gradient(linear, left bottom, left top, color-stop(0.35, #f6f6f6), color-stop(1, #dedede));
-    background: url(../images/bgtexture.png), -moz-linear-gradient(#dedede, #f6f6f6); }
+    background: url(../images/bgtexture.png), -moz-linear-gradient(#dedede, #f6f6f6);
+    background-image: url(/images/button.png);
+    background-position: 0px -140px; }
   body button:focus {
     background-color: #fafafa;
+    background-image: url(/images/button.png);
+    background-position: 0px -140px;
     transition: all .5s linear;
     -o-transition: all .5s linear;
     -moz-transition: all .5s linear;

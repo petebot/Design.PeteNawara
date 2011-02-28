@@ -191,7 +191,9 @@ body {
     color: #29ABE2;
     color: rgba(41, 171, 226, .8);
     @include transition;
-    @include btnbg;
+    //@include btnbg;
+    background-image: url(/images/button.png);
+    background-position: 0px 0;
     
   }
   button:hover {
@@ -199,9 +201,13 @@ body {
     @include transition;
     @include glow;
     @include btnbg2;
+    background-image: url(/images/button.png);
+    background-position: -0px -140px;
   }
   button:focus {
     background-color: #fafafa;
+    background-image: url(/images/button.png);
+    background-position: -0px -140px;
     @include transition;
     @include glow;
   }

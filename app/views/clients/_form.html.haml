@@ -1,0 +1,8 @@
+= render "common/form_errors", :target => @client
+- form_for @client do |form|
+  = form.label :name
+  = form.text_field :name, :class => "auto-focus"
+  = form.label :url, "Client's Website"
+  = form.text_field :url
+  %button{:type => "submit"}= params[:action].capitalize
+  = link_to "Cancel", clients_path

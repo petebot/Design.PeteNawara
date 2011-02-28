@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110219235408) do
+ActiveRecord::Schema.define(:version => 20110227225538) do
 
   create_table "clients", :force => true do |t|
     t.string   "name"
@@ -21,6 +21,18 @@ ActiveRecord::Schema.define(:version => 20110219235408) do
 
   add_index "clients", ["name"], :name => "index_clients_on_name", :unique => true
   add_index "clients", ["url"], :name => "index_clients_on_url", :unique => true
+
+  create_table "projects", :force => true do |t|
+    t.integer "client_id"
+    t.string  "title"
+    t.text    "description"
+    t.date    "start_date"
+    t.date    "end_date"
+    t.integer "priority",    :limit => 1
+    t.string  "url"
+  end
+
+  add_index "projects", ["client_id"], :name => "index_projects_on_client_id"
 
   create_table "tools", :force => true do |t|
     t.string   "name"
