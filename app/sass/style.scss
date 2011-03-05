@@ -161,6 +161,25 @@ body {
     background-color: #FFFDE9;
     background-color: rgba(255, 242, 0, .05);
   }
+  select {
+    border: 1px solid #555;
+       margin:5px 0 10px 0;
+       font-size: 1.2em;
+       color: #666;
+       border: 1px solid #aaa;
+       line-height: 1.2em;
+       width: 40%;
+       -webkit-appearance: none;
+       -webkit-box-shadow: 1px 1px 1px #fff;
+       background-color: #FFFDE9;
+       background-color: rgba(255, 242, 0, .05);
+       padding: 0.5em .4em 0.5em 0.75em;
+       background: rgba(255, 255, 255, .5) url("../images/dd.png") no-repeat right center;
+       option {
+         background-color: #ccc;
+          background-color: rgba(242, 242, 242, .01);
+       }
+  }
   textarea {
   margin:5px 0 10px 0;
   padding: 10px;
@@ -235,13 +254,15 @@ body {
     padding: 0;
     margin: 0;
     background-color: #ccc;
-    background-image: url(/images/button.png);
+    background-color: rgba(0, 0, 0, .1);
+    background-image: url(/images/check.png);
+    background-position: center;
   }
   input[type="checkbox"]:checked {
     background-color: #ffffff;
+    background-color: rgba(255, 255, 255, .8);
     @include transition;
-    background-image: url(/images/button.png);
-    background-position: -0px -140px;
+    background-image: url(/images/checkhov.png);
     @include glow;
   }
   a, a:visited {
